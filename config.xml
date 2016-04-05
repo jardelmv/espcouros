@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+   id="com.jatecnologia.breacon"
+   version="0.0.1"   
+   xmlns="http://www.w3.org/ns/widgets"
+   xmlns:gap="http://phonegap.com/ns/1.0">
+
+<name>breacon 1.0</name>
+<description> Reading BLE Beacons </description>
+<author email="jardel@jatecnologia.com" href="http://jatecnologia.com"> Jardel Vieira </author>
+<content src="index.html" />
+
+<gap:plugin name="cordova-plugin-device-motion" source="npm" />
+<gap:plugin name="cordova-plugin-vibration" source="npm" />
+<plugin name="com.evothings.ble" spec="1.0.0" source="pgb" />
+
+<access origin="*" /> 
+<plugin name="cordova-plugin-whitelist" version="1" />
+<allow-intent href="http://*/*" />
+<allow-intent href="https://*/*" />
+<allow-intent href="tel:*" />
+<allow-intent href="sms:*" />
+<allow-intent href="mailto:*" />
+<allow-intent href="geo:*" />
+
+<platform name="android">
+   <allow-intent href="market:*" />
+   <icon src="breacon_ico.png" platform="android" qualifier="ldpi" />
+</platform>
+
+<platform name="ios">
+   <allow-intent href="itms:*" />
+   <allow-intent href="itms-apps:*" />
+</platform>
+</widget>

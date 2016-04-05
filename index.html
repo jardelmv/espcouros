@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no,
+		shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+	<title>breacon</title>
+
+	<link rel="stylesheet" type="text/css" href="ratchet.css" />
+	
+	<script src="cordova.js"></script>
+	<script src="jquery.js"></script>
+	<script src="pouchdb-5.2.1.min.js"></script>
+	<script src="evothings.js"></script>
+	<script src="ui.js"></script>
+	
+	<script src="app.js"></script>
+		
+	
+	<script>
+	/*
+		dbl = new PouchDB("breacon", {auto_compaction: true});
+		dbr = new PouchDB("https://jardelmv.cloudant.com/breacon");
+		dbl.sync(dbr).on('complete', function () {
+		  console.log("ok");
+		}).on('error', function (err) {
+		  console.log(err);
+		});
+		var timeStamp = Date.now();
+		var deviceName = 'breacon_site'
+		var doc = {
+			'_id': timeStamp + deviceName,
+			'rssi': -93
+		}
+		dbr.put(doc);
+	*/
+	</script>
+
+</head>
+
+<body>
+
+	<header class="bar bar-nav">
+		<img class="logotype" src="logo.png" alt="breacon" />
+	</header>
+	
+	<div class="bar bar-standard bar-header-secondary">
+		<p id="scan-status">Scanning Paused</p>
+    </div>
+	<div class="content">
+		<ul id="found-devices" class="table-view"></ul>
+	</div>
+</body>
+
+</html>
